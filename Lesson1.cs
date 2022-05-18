@@ -42,5 +42,12 @@ namespace Algorithms
                 Console.WriteLine($"Число {number} не является простым");
 
         }
+
+        public static void Task2()
+        {
+            Console.WriteLine("Посчитайте сложность функции");
+            Console.WriteLine("Ответ: Сложность алгоритма O(N^3)");
+        }
+
     }
 }
