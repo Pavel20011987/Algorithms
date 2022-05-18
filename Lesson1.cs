@@ -42,7 +42,9 @@ namespace Algorithms
                 Console.WriteLine($"Число {number} не является простым");
 
         }
-
+        /// <summary>
+        /// Метод решения 2 задания
+        /// </summary>
         public static void Task2()
         {
             Console.WriteLine("Посчитайте сложность функции");
