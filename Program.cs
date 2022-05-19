@@ -10,6 +10,7 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
+            Lesson1.RunLesson1();
         }
     }
 }
