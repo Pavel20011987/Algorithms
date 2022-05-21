@@ -47,6 +47,8 @@
     <Compile Include="ITask.cs" />
     <Compile Include="Lesson.cs" />
     <Compile Include="Lesson1\Lesson1.cs" />
+    <Compile Include="Lesson2\ILinkedList.cs" />
+    <Compile Include="Lesson2\Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
