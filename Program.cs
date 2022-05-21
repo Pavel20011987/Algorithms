@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Algorithms.Lesson2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static Algorithms.L1Task1;
+
 
 namespace Algorithms
 {
@@ -15,7 +17,7 @@ namespace Algorithms
             string userAnswer;
 
             List<ILesson> lessons = BuildLessons();
-            while(true)
+            while (true)
             {
                 Console.Clear();
                 foreach (ILesson lesson in lessons)
@@ -26,15 +28,15 @@ namespace Algorithms
                     break;
                 if (!int.TryParse(userAnswer, out lessonNumber))
                     continue;
-                foreach(ILesson lesson in lessons)
+                foreach (ILesson lesson in lessons)
                 {
-                    if(lesson.Id == lessonNumber)
+                    if (lesson.Id == lessonNumber)
                     {
                         Console.Clear();
                         lesson.RunLesson();
                         Console.Clear();
                     }
-                }    
+                }
             }
         }
         static List<ILesson> BuildLessons()
@@ -62,6 +64,7 @@ namespace Algorithms
             L2Task1 task1 = new L2Task1();
             L2Task2 task2 = new L2Task2();
             lesson2.TaskList.Add(task1);
+            lesson2.TaskList.Add(task2);
             return (lesson2);
         }
     }
