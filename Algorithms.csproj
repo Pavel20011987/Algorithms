@@ -52,9 +52,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram_Lesson1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lesson1\Exercise2.txt" />
+    <Content Include="Lesson1\Диаграмма_классов_1_урок.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
