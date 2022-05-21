@@ -41,6 +41,7 @@ namespace Algorithms
         {
             List<ILesson> lessons = new List<ILesson>();
             lessons.Add(BuildLesson1());
+            lessons.Add(BuildLesson2());
             return (lessons);
         }
         static ILesson BuildLesson1()
@@ -55,6 +56,13 @@ namespace Algorithms
             lesson1.TaskList.Add(task3);
             return (lesson1);
         }
-
+        static ILesson BuildLesson2()
+        {
+            Lesson lesson2 = new Lesson("Урок 2. Массив, список, поиск", 2);
+            L2Task1 task1 = new L2Task1();
+            L2Task2 task2 = new L2Task2();
+            lesson2.TaskList.Add(task1);
+            return (lesson2);
+        }
     }
 }
