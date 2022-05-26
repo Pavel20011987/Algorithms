@@ -1,4 +1,5 @@
 ﻿using Algorithms.Lesson2;
+using Algorithms.Lesson3;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,7 @@ namespace Algorithms
             List<ILesson> lessons = new List<ILesson>();
             lessons.Add(BuildLesson1());
             lessons.Add(BuildLesson2());
+            lessons.Add(BuildLesson3());
             return (lessons);
         }
         static ILesson BuildLesson1()
@@ -70,9 +72,9 @@ namespace Algorithms
 
         static ILesson BuildLesson3()
         {
-            Lesson lesson2 = new Lesson("Урок 3. Класс, структура и дистанция", 3);
+            Lesson lesson3 = new Lesson("Урок 3. Класс, структура и дистанция", 3);
             L3Task1 task1 = new L3Task1();
-            lesson2.TaskList.Add(task1);
+            lesson3.TaskList.Add(task1);
             return (lesson3);
         }
     }
