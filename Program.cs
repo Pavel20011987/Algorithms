@@ -47,6 +47,7 @@ namespace Algorithms
             lessons.Add(BuildLesson2());
             lessons.Add(BuildLesson3());
             lessons.Add(BuildLesson4());
+            lessons.Add(BuildLesson5());
             return (lessons);
         }
         static ILesson BuildLesson1()
@@ -87,6 +88,14 @@ namespace Algorithms
             lesson4.TaskList.Add(task1);
             lesson4.TaskList.Add(task2);
             return (lesson4);
+        }
+
+        static ILesson BuildLesson5()
+        {
+            Lesson lesson5 = new Lesson("Урок 5. Стек, очередь, словарь и коллекции в C#", 5);
+            L5Task1 task1 = new L5Task1();
+            lesson5.TaskList.Add(task1);
+            return (lesson5);
         }
     }
 }
