@@ -46,6 +46,7 @@ namespace Algorithms
             lessons.Add(BuildLesson1());
             lessons.Add(BuildLesson2());
             lessons.Add(BuildLesson3());
+            lessons.Add(BuildLesson4());
             return (lessons);
         }
         static ILesson BuildLesson1()
@@ -76,6 +77,16 @@ namespace Algorithms
             L3Task1 task1 = new L3Task1();
             lesson3.TaskList.Add(task1);
             return (lesson3);
+        }
+
+        static ILesson BuildLesson4()
+        {
+            Lesson lesson4 = new Lesson("Урок 4. Деревья, хэш-таблицы", 4);
+            L4Task1 task1 = new L4Task1();
+            L4Task2 task2 = new L4Task2();
+            lesson4.TaskList.Add(task1);
+            lesson4.TaskList.Add(task2);
+            return (lesson4);
         }
     }
 }
