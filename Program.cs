@@ -1,6 +1,7 @@
 ﻿using Algorithms.Lesson2;
 using Algorithms.Lesson3;
 using Algorithms.Lesson4;
+using Algorithms.Lesson5;
 using System;
 using System.Collections.Generic;
 using System.Linq;
