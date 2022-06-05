@@ -7,13 +7,23 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Lesson5
 {
+    /// <summary>
+    /// Создание класса для решения 5 задания
+    /// </summary>
     internal class L5Task1 : ITask
     {
         public BTree Tree { get; }
+        /// <summary>
+        /// Создание переменной Название задания
+        /// </summary>
         public string Name => "Реализовать обход дерева BFS и DFS";
-
+        /// <summary>
+        /// Создание переменной Описание
+        /// </summary>
         public string Description => "Обход дерева в ширину";
-
+        /// <summary>
+        /// Реализация метода RunTask()
+        /// </summary>
         public void RunTask()
         {
             Tree.Root = null;
@@ -26,12 +36,17 @@ namespace Algorithms.Lesson5
             DFSTree(Tree.Root);
             Console.WriteLine("");
         }
-
+        /// <summary>
+        /// Создание конструктора для класса
+        /// </summary>
         public L5Task1()
         {
             Tree = new BTree(null);
         }
-
+        /// <summary>
+        /// Реализация метода AddSomeIntToTree
+        /// </summary>
+        /// <param name="count"></param>
         public void AddSomeIntToTree(int count = 10)
         {
             int randomInt;
@@ -51,7 +66,9 @@ namespace Algorithms.Lesson5
                     break;
             }
         }
-
+        /// <summary>
+        /// Реализация метода BFSTree
+        /// </summary>
         public void BFSTree()
         {
             Queue<BTreeNode> bfsQueue = new Queue<BTreeNode>();
@@ -69,7 +86,10 @@ namespace Algorithms.Lesson5
             }
             Console.WriteLine();
         }
-
+        /// <summary>
+        /// Реализация метода DFSTree
+        /// </summary>
+        /// <param name="currentNode"></param>
         public void DFSTree(BTreeNode currentNode)
         {
             if (currentNode == null)
