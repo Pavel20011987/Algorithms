@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static Algorithms.L1Task1;
-
+using Algorithms.Lesson7;
 
 namespace Algorithms
 {
