@@ -16,16 +16,23 @@ namespace Algorithms
         public int Id { get; }
 
         public string Name { get; }
+
+
         /// <summary>
         /// Реализация конструктора класса Lesson
         /// </summary>
         /// <param name="name"></param>
         /// <param name="id"></param>
-        public Lesson(string name, int id)
+        /// <param name="tasks"></param>
+
+
+        public Lesson(string name, int id, params ITask[] tasks)
         {
             Name = name;
             Id = id;
             TaskList = new List<ITask>();
+            foreach (ITask task in tasks)
+                this.TaskList.Add(task);
         }
         //Реализация метода ILesson.RunLesson()
         void ILesson.RunLesson()
