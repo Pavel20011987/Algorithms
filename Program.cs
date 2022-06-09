@@ -4,11 +4,13 @@ using Algorithms.Lesson4;
 using Algorithms.Lesson5;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static Algorithms.L1Task1;
 using System.Reflection;
+
 
 
 namespace Algorithms
@@ -17,6 +19,7 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
+
             Assembly asm = Assembly.LoadFrom("../../DLL/HomeWorkLib.dll");
             Type HWRunner = asm.GetType("HomeWorkLib.HomeWorkRunner", true, true);
             object obj = Activator.CreateInstance(HWRunner);
@@ -106,5 +109,7 @@ namespace Algorithms
             //    return (lesson5);
             //}
         }
+
     }
 }
+
