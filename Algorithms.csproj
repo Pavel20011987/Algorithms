@@ -289,6 +289,12 @@
   <ItemGroup>
     <Folder Include="Lesson4\NewFolder1\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HomeWorkLib\HomeWorkLib.csproj">
+      <Project>{0f86d905-c840-44c5-b528-1a81635a9e66}</Project>
+      <Name>HomeWorkLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
