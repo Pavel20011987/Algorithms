@@ -10,8 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static Algorithms.L1Task1;
 using System.Reflection;
-
-
+using Algorithms.Lesson7;
 
 namespace Algorithms
 {
@@ -19,6 +18,7 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
+            string userAnswer;
 
             //Assembly asm = Assembly.LoadFrom("../../DLL/HomeWorkLib.dll");
             //Type HWRunner = asm.GetType("HomeWorkLib.HomeWorkRunner", true, true);
