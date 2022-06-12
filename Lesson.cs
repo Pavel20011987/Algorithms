@@ -19,7 +19,7 @@ namespace Algorithms
 
 
         /// <summary>
-        /// Реализация конструктора класса Lesson
+        /// Реализация конструктора кла*сса Lesson
         /// </summary>
         /// <param name="name"></param>
         /// <param name="id"></param>
