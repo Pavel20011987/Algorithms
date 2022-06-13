@@ -62,6 +62,7 @@ namespace Algorithms
             lessons.Add(new Lesson("Урок 4. Деревья, хэш-таблицы", 4, new L4Task1()));
             lessons.Add(new Lesson("Урок 5. Стек, очередь, словарь и коллекции в C#", 5, new L5Task1()));
             lessons.Add(new Lesson("Урок 7. Динамическое программирование", 7, new L7Task1()));
+            lessons.Add(new Lesson("Урок 8. Алгоритмы сортировки", 8, new L8Task1()));
             return (lessons);
         }
     }
