@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using static Algorithms.L1Task1;
 using System.Reflection;
 using Algorithms.Lesson7;
+using Algorithms.Lesson8;
 
 namespace Algorithms
 {
@@ -52,6 +53,8 @@ namespace Algorithms
             }
         }
 
+
+
         static List<ILesson> BuildLessons()
         {
             List<ILesson> lessons = new List<ILesson>();
@@ -65,7 +68,9 @@ namespace Algorithms
             lessons.Add(new Lesson("Урок 8. Алгоритмы сортировки", 8, new L8Task1()));
             return (lessons);
         }
-    }
+
 
     }
+
+}
 
